@@ -1,10 +1,9 @@
 import { FC, useEffect } from "react"
-import { useNavigate, useParams } from "react-router-dom"
-import { useTypedSelector } from "../shared/hooks/use-typed-selector"
+import { useNavigate } from "react-router-dom"
+import { useTypedSelector } from "../../../shared/hooks/use-typed-selector"
 
-export const Post: FC = () => {
+export const PostInfoPage: FC = () => {
     const { post } = useTypedSelector((store) => store.post)
-    const { id } = useParams()
     const navigate = useNavigate()
     const goBack = () => navigate(-1)
 
@@ -13,10 +12,7 @@ export const Post: FC = () => {
             navigate(-1)
         }
     }, [post.id])
-    console.log('Я Женёк разраб');
     
-    console.log(post);
-
     return (
         <div>
             <h1>{post.userId}</h1>
