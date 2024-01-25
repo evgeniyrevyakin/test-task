@@ -13,6 +13,7 @@ export const Post: FC = () => {
             navigate(-1)
         }
     }, [post.id])
+    console.log('Я Женёк разраб');
     
     console.log(post);
 
