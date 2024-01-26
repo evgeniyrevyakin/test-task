@@ -4,7 +4,6 @@
     padding: 20px;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: rgb(226, 226, 227);
     margin: 20px auto;
 }
   
@@ -15,15 +14,6 @@
   
 .title {
     font-size: 18px;
-}
-  
-.button {
-    margin-top: 20px;
-    color: pink;
-}
-  
-.button:hover {
-    cursor: pointer;
 }
 
 .truncate {

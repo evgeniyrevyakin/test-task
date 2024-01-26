@@ -21,10 +21,8 @@ export const PostItem: FC<Props> = ({ post }) => {
     <div className={styles.container}>
       <h2 className={styles.post_id}>№ {post.id}</h2>
       <h3 className={styles.title}>{post.title}</h3>
-      <p className={styles.truncate}>
-        {post.body}
-      </p>
-      <button onClick={() => handleViewClick(post)} className={styles.button}>
+      <p className={styles.truncate}>{post.body}</p>
+      <button onClick={() => handleViewClick(post)}>
         Просмотр
       </button>
     </div>
