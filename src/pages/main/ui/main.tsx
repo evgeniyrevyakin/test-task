@@ -19,7 +19,7 @@ export const Main: FC = () => {
     return (
         <Routes>
             <Route 
-                path='/' 
+                path='*' 
                 element={
                     <Posts 
                         data={data} 
@@ -28,7 +28,7 @@ export const Main: FC = () => {
                     />
                 }
             />
-            <Route path='post/:id' element={<PostInfoPage />}/>
+            <Route path='post/*' element={<PostInfoPage />}/>
         </Routes>
     )
 }

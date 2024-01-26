@@ -1,6 +1,7 @@
 {
   "name": "test-task",
   "version": "0.1.0",
+  "homepage": "https://evgeniyrevyakin.github.io/test-task",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
